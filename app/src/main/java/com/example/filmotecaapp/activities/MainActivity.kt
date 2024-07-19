@@ -66,10 +66,11 @@ class MainActivity : AppCompatActivity() {
                         //peliculasList = mutableListOf<PeliculasResponse>( result )
                         peliculasList = result
                     } else {
-                        peliculasList = emptyList()
+                        searchByName("Terminator")
                     }
                     //adapter.updateData(peliculasList, query)
                     Log.i("pruebas", result.toString())
+                    Log.i("pruebas", peliculasList.toString())
                 }
 
             }catch (e: Exception){
